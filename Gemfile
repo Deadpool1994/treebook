@@ -25,6 +25,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'devise'
 gem 'simple_form'
+<<<<<<< HEAD
+=======
+gem 'protected_attributes'
+>>>>>>> d664fe4e17445fcd5a4a2b65b3507811afab513e
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
