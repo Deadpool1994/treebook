@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'profiles/show'
+
   devise_for :users
   resources :statuses
 
@@ -6,7 +8,7 @@ Rails.application.routes.draw do
   devise_scope :user do
     get 'register', to: 'devise/registrations#new', as: :register
     get 'login', to: 'devise/sessions#new', as: :login
-    get 'login', to: 'devise/sessions#destroy', as: :logout
+    get 'logout', to: 'devise/sessions#destroy', as: :logout
 
   end
 

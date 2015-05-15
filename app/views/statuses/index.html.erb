@@ -6,7 +6,11 @@
 
 <% @statuses.each do |status| %>
 <div class="status">
-
+  <div class="row">
+    <div class="span1">
+      avatar
+    </div>
+    <div class="span7">
     <strong></strong>
     <p><%= status.content%></p>
     <div class="meta">
@@ -16,6 +20,8 @@
         <%= link_to "Delete", status, method: :delete,data: {confirm: "Are you want to delete the status"} %>
       </span>
     </div>
+  </div>
+</div>
 </div>
 <hr>
 <%end%>
